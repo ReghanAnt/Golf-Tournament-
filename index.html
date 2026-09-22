@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THE 204 OPEN • Ryder Cup Finals</title>
+<title>THE 204 OPEN • Ryder Cup Finals • Klerksdorp GC</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -12,7 +33,87 @@
 .font-sans-body{font-family:'Inter',sans-serif}
 </style>
 </head>
-<body class="bg-[#0f2817] text-[#F6F1E1]">
-...
-</body>
+<body class="bg-[#0f2817] text-[#F6F1E1] antialiased">
+<div class="max-w-[980px] mx-auto px-5 md:px-8 py-8 md:py-12">
+  <!-- HEADER -->
+  <header class="text-center mb-10">
+    <div class="font-mono-label text-[10px] tracking-[0.28em] text-[#F6F1E1]/50 uppercase mb-5">POWERED BY THE GOLF OUENS</div>
+    <h1 class="font-serif-display font-[800] leading-[0.85] tracking-[-0.02em] mb-4">
+      <span class="block text-[#D4AF37] text-[56px] md:text-[84px]">THE 204</span>
+      <span class="block text-[#D4AF37] text-[56px] md:text-[84px] -mt-2 md:-mt-4">OPEN</span>
+    </h1>
+    <div class="font-mono-label text-[11px] tracking-[0.18em] text-[#F6F1E1]/70 uppercase mb-4">ESTABLISHED 2026 • KLERKSDORP GC • RYDER CUP + FINALS FORMAT</div>
+    <div class="flex flex-col items-center gap-2.5">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37] text-[#0f2817] border border-[#D4AF37]"><span class="font-mono-label text-[10px] tracking-[0.14em] font-bold">18 HOLES ONLY • 2 SIDES OF 4 → FINALS FOR 1ST-4TH</span></div>
+      <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#121212] border border-[#F6F1E1]/10"><span class="font-mono-label text-[10px] tracking-[0.14em] text-[#F6F1E1]/70">4 TEAMS (8 PLAYERS) • 2 SIDES • ONLY ONE TEAM OF TWO CAN WIN • ONE ROUND</span></div>
+    </div>
+    <div class="mt-8 max-w-[760px] mx-auto">
+      <div class="bg-[#121212] border border-[#F6F1E1]/10 rounded-[16px] p-3 md:p-4">
+        <div class="flex items-center justify-between gap-1 md:gap-2 font-mono-label text-[9px] md:text-[10px] tracking-[0.1em]">
+          <div class="flex-1 flex flex-col items-center gap-1 bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[10px] py-2.5"><div class="text-[#D4AF37] font-bold">HOLES 1-6</div><div class="text-[#F6F1E1] font-semibold">FOURSOMES</div><div class="text-[#F6F1E1]/50">2 PTS • SIDE BATTLE</div></div>
+          <div class="text-[#D4AF37]">→</div>
+          <div class="flex-1 flex flex-col items-center gap-1 bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[10px] py-2.5"><div class="text-[#D4AF37] font-bold">HOLES 7-12</div><div class="text-[#F6F1E1] font-semibold">FOURBALLS</div><div class="text-[#F6F1E1]/50">2 PTS • SIDE BATTLE</div></div>
+          <div class="text-[#D4AF37]">→</div>
+          <div class="flex-1 flex flex-col items-center gap-1 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-[10px] py-2.5"><div class="text-[#D4AF37] font-bold">HOLES 13-18</div><div class="text-[#F6F1E1] font-semibold">FINALS</div><div class="text-[#D4AF37] font-bold">1ST-4TH</div></div>
+        </div>
+        <div class="text-center mt-2.5 font-mono-label text-[9px] tracking-[0.14em] text-[#F6F1E1]/30">PHASE 1: QUALIFIER (12 HOLES) → PHASE 2: FINALS (6 HOLES) = 18 HOLES TOTAL</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIDES -->
+  <section class="mb-6">
+    <div class="flex items-center gap-3 mb-4"><div class="font-mono-label text-[11px] tracking-[0.2em] text-[#D4AF37]">01</div><div class="h-px flex-1 bg-[#F6F1E1]/10"></div><div class="font-mono-label text-[11px] tracking-[0.2em] text-[#F6F1E1]/60 uppercase">The Sides • 2 Teams of 4 • 18 Holes</div></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-[#121212] border border-[#F6F1E1]/10 rounded-[20px] p-7 relative overflow-hidden"><div class="absolute top-0 left-0 right-0 h-[2px] bg-[#D4AF37]"></div><div class="font-mono-label text-[10px] tracking-[0.2em] text-[#D4AF37] mb-2">SIDE A • 4 PLAYERS</div><h3 class="font-serif-display font-bold text-[28px] text-[#F6F1E1]">TEAM GOLD</h3><div class="font-mono-label text-[10px] text-[#F6F1E1]/50 mt-2">T1 + T2 • SIDE OF 4</div><div class="mt-6 space-y-2"><div class="bg-[#0f2817]/80 border border-[#F6F1E1]/10 rounded-[12px] px-3 py-3 flex justify-between"><span class="font-mono-label text-[11px]">T1</span><span class="font-mono-label text-[10px] text-[#F6F1E1]/50">R • R</span></div><div class="bg-[#0f2817]/80 border border-[#F6F1E1]/10 rounded-[12px] px-3 py-3 flex justify-between"><span class="font-mono-label text-[11px]">T2</span><span class="font-mono-label text-[10px] text-[#F6F1E1]/50">R • R</span></div></div></div>
+      <div class="bg-[#121212] border border-[#F6F1E1]/10 rounded-[20px] p-7 relative overflow-hidden"><div class="absolute top-0 left-0 right-0 h-[2px] bg-[#F6F1E1]/20"></div><div class="font-mono-label text-[10px] tracking-[0.2em] text-[#F6F1E1]/60 mb-2">SIDE B • 4 PLAYERS</div><h3 class="font-serif-display font-bold text-[28px] text-[#F6F1E1]">TEAM GREEN</h3><div class="font-mono-label text-[10px] text-[#F6F1E1]/50 mt-2">T3 + T4 • SIDE OF 4</div><div class="mt-6 space-y-2"><div class="bg-[#0f2817]/80 border border-[#F6F1E1]/10 rounded-[12px] px-3 py-3 flex justify-between"><span class="font-mono-label text-[11px]">T3</span><span class="font-mono-label text-[10px] text-[#F6F1E1]/50">R • R</span></div><div class="bg-[#0f2817]/80 border border-[#F6F1E1]/10 rounded-[12px] px-3 py-3 flex justify-between"><span class="font-mono-label text-[11px]">T4</span><span class="font-mono-label text-[10px] text-[#F6F1E1]/50">R • R</span></div></div></div>
+    </div>
+  </section>
+
+  <!-- CAPITAL FLOW -->
+  <section class="mb-6">
+    <div class="flex items-center gap-3 mb-4"><div class="font-mono-label text-[11px] tracking-[0.2em] text-[#D4AF37]">02</div><div class="h-px flex-1 bg-[#F6F1E1]/10"></div><div class="font-mono-label text-[11px] tracking-[0.2em] text-[#F6F1E1]/60 uppercase">Capital Flow • Inflow → Vault → Outflow • With Betting</div></div>
+    <div class="bg-[#121212] border border-[#F6F1E1]/10 rounded-[20px] p-6 md:p-7">
+      <div class="flex justify-between mb-4"><span class="font-mono-label text-[11px] tracking-[0.14em] text-[#F6F1E1]/50">INFLOW • 4 TEAMS (8 PLAYERS)</span><span class="font-mono-label text-[11px] text-[#F6F1E1]/50">4 × R760</span></div>
+      <div class="grid grid-cols-4 gap-3 mb-6"><div class="bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[12px] py-3 text-center font-mono-label text-[11px]">R • R</div><div class="bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[12px] py-3 text-center font-mono-label text-[11px]">R • R</div><div class="bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[12px] py-3 text-center font-mono-label text-[11px]">R • R</div><div class="bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[12px] py-3 text-center font-mono-label text-[11px]">R • R</div></div>
+      <div class="border border-[#D4AF37] rounded-[16px] px-5 py-4 flex justify-between items-center mb-6"><div><div class="font-mono-label text-[10px] tracking-[0.2em] text-[#D4AF37]">CENTRAL VAULT</div><div class="font-serif-display text-[26px] text-[#F6F1E1]">R3,040 <span class="font-mono-label text-[12px] text-[#F6F1E1]/60">Total Collected</span></div></div><div class="text-[#D4AF37] text-[28px]">Σ</div></div>
+      <div class="font-mono-label text-[11px] tracking-[0.2em] text-[#F6F1E1]/50 mb-3">OUTFLOW • DISTRIBUTION • 2 Channels • No Cart</div>
+      <div class="space-y-3 mb-4">
+        <div class="bg-[#0f2817]/60 border border-[#F6F1E1]/10 rounded-[14px] px-4 py-3 flex justify-between items-center"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full bg-[#F6F1E1]/5 border border-[#F6F1E1]/10 flex items-center justify-center">⛳</div><div><div class="font-mono-label text-[12px]">Course</div><div class="font-mono-label text-[10px] text-[#F6F1E1]/40">Green Fee</div></div></div><div class="text-right"><div class="font-serif-display text-[18px]">R1,440</div><div class="font-mono-label text-[10px] text-[#F6F1E1]/40">R180 pp • 47.4%</div></div></div>
+        <div class="bg-[#0f2817]/60 border border-[#D4AF37]/20 rounded-[14px] px-4 py-3 flex justify-between items-center"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/20 flex items-center justify-center">💰</div><div><div class="font-mono-label text-[12px] text-[#D4AF37]">Prize Pot</div><div class="font-mono-label text-[10px] text-[#F6F1E1]/40">Winner Takes All</div></div></div><div class="text-right"><div class="font-serif-display text-[18px] text-[#D4AF37]">R1,600</div><div class="font-mono-label text-[10px] text-[#D4AF37]/70">R200 pp • 52.6%</div></div></div>
+      </div>
+      <div class="flex items-center gap-2 font-mono-label text-[10px] text-[#F6F1E1]/50"><span class="w-2 h-2 rounded-full bg-[#4ade80]"></span> LEDGER VERIFIED • R1,440 + R1,600 = R3,040 ✓</div>
+    </div>
+  </section>
+
+  <!-- FORMAT -->
+  <section class="mb-6">
+    <div class="flex items-center gap-3 mb-4"><div class="font-mono-label text-[11px] tracking-[0.2em] text-[#D4AF37]">03</div><div class="h-px flex-1 bg-[#F6F1E1]/10"></div><div class="font-mono-label text-[11px] tracking-[0.2em] text-[#F6F1E1]/60 uppercase">Format • Ryder Cup Qualifier → Finals • 18 Holes Only</div></div>
+    <div class="bg-[#121212] border border-[#D4AF37]/20 rounded-[20px] p-6 md:p-7 mb-4">
+      <div class="font-mono-label text-[10px] tracking-[0.2em] text-[#D4AF37] mb-2">PHASE 1 • RYDER CUP QUALIFIER • HOLES 1-12 • 4 POINTS • 2.5 TO WIN SIDE</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[14px] p-4"><div class="font-mono-label text-[10px] text-[#D4AF37] mb-1">HOLES 1-6 • FOURSOMES • 2 PTS</div><div class="font-serif-display font-bold text-[18px] mb-2">ALTERNATE SHOT</div><div class="font-mono-label text-[10px] text-[#F6F1E1]/60">Match 1: T1 vs T3<br/>Match 2: T2 vs T4<br/>One ball, alternate shots. Win = 1pt</div></div>
+        <div class="bg-[#0f2817] border border-[#F6F1E1]/10 rounded-[14px] p-4"><div class="font-mono-label text-[10px] text-[#D4AF37] mb-1">HOLES 7-12 • FOURBALLS • 2 PTS</div><div class="font-serif-display font-bold text-[18px] mb-2">BETTERBALL SCRAMBLE DRIVE</div><div class="font-mono-label text-[10px] text-[#F6F1E1]/60">STEP 01 TEE SHOT Both tee off<br/>STEP 02 SCRAMBLE Choose best drive<br/>STEP 03 BETTERBALL Best score counts<br/>T1 vs T4, T2 vs T3 cross</div></div>
+      </div>
+    </div>
+    <div class="bg-[#D4AF37] text-[#0f2817] rounded-[20px] p-6 md:p-7">
+      <div class="font-mono-label text-[10px] tracking-[0.2em] font-bold mb-3">PHASE 2 • FINALS • HOLES 13-18 • 6 HOLES • FINAL RANKINGS</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-[#0f2817] text-[#F6F1E1] rounded-[14px] p-4 border border-[#D4AF37]"><div class="font-mono-label text-[10px] text-[#D4AF37] mb-1">UPPER BRACKET • CHAMPIONSHIP</div><div class="font-serif-display font-bold text-[18px] mb-1">FOR 1ST & 2ND + R1,600</div><div class="font-mono-label text-[10px] text-[#F6F1E1]/60">Winning side internal battle:<br/>If Gold won: T1 vs T2<br/>If Green won: T3 vs T4<br/>Betterball over holes 13-18<br/>Winner = 1ST PLACE CHAMPIONS</div></div>
+        <div class="bg-[#0f2817]/80 text-[#F6F1E1] rounded-[14px] p-4 border border-[#F6F1E1]/10"><div class="font-mono-label text-[10px] text-[#F6F1E1]/50 mb-1">LOWER BRACKET • CONSOLATION</div><div class="font-serif-display font-bold text-[18px] mb-1">FOR 3RD & 4TH</div><div class="font-mono-label text-[10px] text-[#F6F1E1]/60">Losing side internal battle:<br/>If Gold lost: T1 vs T2 for 3rd/4th<br/>If Green lost: T3 vs T4 for 3rd/4th<br/>Betterball over holes 13-18<br/>Winner = 3RD PLACE</div></div>
+      </div>
+      <div class="mt-4 text-center font-mono-label text-[11px] font-bold tracking-[0.14em]">ONLY ONE TEAM OF TWO CAN WIN THE 204 OPEN • 1ST TAKES R1,600</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[#F6F1E1]/10 pt-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+      <div class="font-mono-label text-[11px] tracking-[0.12em] text-[#F6F1E1]/60">Entry: <span class="text-[#F6F1E1] font-semibold">R380</span> | Team: <span class="text-[#F6F1E1] font-semibold">R760</span> | Total: <span class="text-[#D4AF37] font-semibold">R3,040</span> | Prize: <span class="text-[#D4AF37] font-bold">R1,600 Winner Takes All</span></div>
+      <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-[#121212] border border-[#F6F1E1]/10 flex items-center justify-center"><span class="font-serif-display font-bold text-[12px] text-[#D4AF37]">204</span></div><span class="font-mono-label text-[10px] tracking-[0.18em] text-[#F6F1E1]/40">BROUGHT TO YOU BY THE GOLF OUENS</span></div>
+    </div>
+    <div class="text-center"><span class="font-mono-label text-[10px] tracking-[0.16em] text-[#F6F1E1]/50 bg-[#121212] border border-[#F6F1E1]/10 px-5 py-2.5 rounded-full">4 TEAMS • RYDER CUP FINALS • KLERKSDORP GOLF CLUB • 204 • Prize R1,600</span></div>
+  </footer>
+</div>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
 </html>
